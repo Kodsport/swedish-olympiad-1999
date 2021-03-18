@@ -4,7 +4,7 @@ source: Programmeringsolympiadens kvaltävling 1999
 license: cc by-sa
 type: scoring
 name:
-    en: Refridgerator Transport
+    en: Refrigerator Transport
     sv: Kylskåpstransport
 grading:
     show_test_data_groups: true
