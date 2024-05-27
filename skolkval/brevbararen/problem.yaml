@@ -1,0 +1,9 @@
+author: Håkan Strömberg 
+source: Programmeringsolympiadens skolkval 1999
+rights_owner: Programmeringsolympiaden
+license: cc by-sa
+type: scoring
+grading:
+  show_test_data_groups: true
+
+validation: custom
