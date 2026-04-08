@@ -11,11 +11,12 @@ When he reads the letter on top of the pile, he has two choices:
 Since Harry lives at the end of the street, he refuses to turn around and go back. The letters that end up on top of the pile and whose address he has already passed therefore go directly into the bag.
 Despite everything, Harry has a little mail carrier's heart that beats a little extra when he manages, using his method, to deliver as many letters as possible.
 
-Write a program that receives a string of uppercase letters \texttt{A}--\texttt{Z}, where no letter can appear more than once. The number of letters can vary but cannot exceed 26. This string describes Harry's pile of letters, with the top letter first. Since the street is ``numbered'' from A to Z, the program should find the longest subsequence of the string where the letters are in ascending order. This subsequence gives the maximum possible number of delivered letters --- something Harry can achieve if he always makes the right choice.
+Write a program that receives a string of uppercase letters \texttt{A}-\texttt{Z}, where no letter can appear more than once. The number of letters can vary but cannot exceed 26. This string describes Harry's pile of letters, with the top letter first. Since the street is ``numbered'' from A to Z, the program should find the longest subsequence of the string where the letters are in ascending order. This subsequence gives the maximum possible number of delivered letters --- something Harry can achieve if he always makes the right choice.
 
 \section*{Input}
-A string of at most 26 uppercase letters where none appears more than once.
-
+The input is a string $S$ ($1 \leq |S| \leq 26$) consisting of uppercase letters \texttt{A}-\texttt{Z}.
+Each letter appears at most once in the string.
 
 \section*{Output}
-Output the longest string that is a subsequence of the input string such that all letters are in alphabetical order. If there are multiple equivalent solutions, it suffices to output one of them.
+Output the longest string that is a subsequence of the input string such that all letters are in alphabetical order.
+If there are multiple equally good solutions, it suffices to output any of them.
