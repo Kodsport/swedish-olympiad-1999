@@ -1,16 +1,16 @@
 \problemname{Kylskåpstransport}
 
-En fabrik som tillverkar kylskåp ska leverera ett större parti med $n, 1 \le n \le 1000$ kylar till en stormarknad. Till sitt förfogande har fabriken två bilar.
+En fabrik som tillverkar kylskåp ska leverera ett större parti med $n$ kylar till en stormarknad. Till sitt förfogande har fabriken två bilar.
 
 \begin{itemize}
-\item bil $A$ kostar $p_a$ kr/resa, $500 \le p_a \le 2000$ och kan lasta $k_a, 10 \le k_a \le 50$, kylskåp åt gången.
-\item bil $B$ kostar $p_b$ kr/resa, $500 \le p_b \le 2000$ och kan lasta $k_b, 10 \le k_b \le 50$, kylskåp åt gången.
+  \item bil $A$ kostar $p_a$ kr/resa och kan lasta $k_a$ kylskåp åt gången.
+  \item bil $B$ kostar $p_b$ kr/resa och kan lasta $k_b$ kylskåp åt gången.
 \end{itemize}
 
 Din uppgift är nu att skriva ett program som tar emot uppgifter om de fem variablerna ovan och som med hjälp av dessa bestämmer hur många turer varje bil ska köra för att minimera \emph{den totala transportkostnaden}.
 
 \section*{Indata}
-Indata består av de fem heltalen $p_a$, $k_a$, $p_b$, $k_b$ och $n$ på en rad, separerade med ett blanksteg.
+Indatan består av de fem heltalen $p_a$, $k_a$, $p_b$, $k_b$ ($500 \leq p_a, p_b \leq 2000$, $10 \leq k_a, k_b \leq 50$) och $n$ ($1 \leq n \leq 1000$) på en rad, separerade med ett blanksteg.
 
 \section*{Utdata}
 Utdatan ska bestå av tre heltal: antalet turer bil $A$ ska köra, antalet turer bil $B$ ska köra, samt den totala kostnaden i kronor.
@@ -26,7 +26,7 @@ För att få poäng för en grupp så måste du klara alla testfall i gruppen.
 \begin{tabular}{| l | l | p{12cm} |}
   \hline
   \textbf{Grupp} & \textbf{Poäng} & \textbf{Gränser} \\ \hline
-  $1$    & $33$        &  Enbart bil A måste göra resor i en optimal lösning. \\ \hline
+  $1$    & $33$        &  Enbart bil $A$ måste göra resor i en optimal lösning. \\ \hline
   $2$    & $67$        &  Inga ytterligare begränsningar. \\ \hline
 \end{tabular}
 

@@ -1,39 +1,29 @@
-\problemname{Refrigerator Transport}
-A factory that constructs refrigerator will deliver a shipment of $n$ refrigerators to a store.
-The factory has two cars it can use:
+\problemname{Fridge Transport}
+
+A factory that manufactures refrigerators needs to deliver a large shipment of $n$ fridges to a supermarket. The factory has two trucks at its disposal.
+
 \begin{itemize}
-    \item Car A costs $p_a$ Swedish kronor per trip, and can load $k_a$ refrigerators per trip.
-    \item Car B costs $p_b$ Swedish kronor per trip, and can load $k_b$ refrigerators per trip.
+  \item Truck $A$ costs $p_a$ kr/trip and can carry $k_a$ fridges at a time.
+  \item Truck $B$ costs $p_b$ kr/trip and can carry $k_b$ fridges at a time.
 \end{itemize}
 
-When transporting the refrigerators, each of the cars can be used any number of times.
-Depending on how many trips each car performs, one would get a different \emph{total cost of transporting} all the refrigerators.
-Your task is to write a program that takes this data and computes how many trips each car should take in order to minimize this cost.
+Your task is to write a program that, given the five variables above, determines how many trips each truck should make in order to minimize the \emph{total transport cost}.
 
 \section*{Input}
-The first and only line of input contains five integers separated by spaces:
-
-\begin{itemize}
-    \item the cost per trip $p_a$ ($500 \le p_a \le 2\,000$) of car A,
-    \item the capacity per trip $k_a$ ($10 \le k_a \le 50$) of car A,
-    \item the cost per trip $p_b$ ($500 \le p_b \le 2\,000$) of car B,
-    \item the capacity per trip $k_b$ ($10 \le k_b \le 50$) of car B, and
-    \item the number of refrigerators to transport $n$ ($1 \le n \le 1\,000$).
-\end{itemize}
+The input consists of the five integers $p_a$, $k_a$, $p_b$, $k_b$ ($500 \leq p_a, p_b \leq 2000$, $10 \leq k_a, k_b \leq 50$) and $n$ ($1 \leq n \leq 1000$) on a single line, separated by spaces.
 
 \section*{Output}
-Output a single line with three integers -- the number of trips the first car should make, the number of trips the second car should make, and the total cost of transportation.
-For all given inputs, this answer is unique.
+Print three integers: the number of trips truck $A$ should make, the number of trips truck $B$ should make, and the total cost in kronor.
+For all given test cases, it is guaranteed that the answer is unique.
 
 \section*{Scoring}
 Your solution will be tested on a set of test groups.
 To earn points for a group, you must pass all test cases in that group.
 
-
 \noindent
 \begin{tabular}{| l | l | p{12cm} |}
   \hline
   \textbf{Group} & \textbf{Points} & \textbf{Constraints} \\ \hline
-  $1$    & $33$        & Only car A should make any trips in the optimal solution. \\ \hline
-  $2$    & $67$        & No additional constraints.  \\ \hline
+  $1$    & $33$        &  Only truck $A$ needs to make trips in an optimal solution. \\ \hline
+  $2$    & $67$        &  No additional constraints. \\ \hline
 \end{tabular}
